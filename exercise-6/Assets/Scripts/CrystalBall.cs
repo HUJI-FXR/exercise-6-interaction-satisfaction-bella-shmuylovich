@@ -33,16 +33,6 @@ public class CrystalBall : MonoBehaviour
 
     #endregion
 
-    #region API
-
-    public void Throw()
-    {
-        Debug.Log("throw");
-        _rigidbody.AddForce(Vector3.up);
-    }
-
-    #endregion
-
     #region HELPERS
 
     private void Freeze()
