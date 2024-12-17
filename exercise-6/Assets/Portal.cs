@@ -9,9 +9,8 @@ public class Portal : MonoBehaviour
     #region VARIABLES
 
     [SerializeField] private Transform otherPortal;
-
-    private TeleportationArea _teleportationArea;
-
+    [SerializeField] private TeleportationArea _teleportationArea;
+    
     #endregion
 
     #region MONOBEHAVIOUR
@@ -25,11 +24,7 @@ public class Portal : MonoBehaviour
     {
         EventManager.Instance.OnBallPuzzleSolved -= EnableTeleport;
     }
-
-    private void Awake()
-    {
-        _teleportationArea = GetComponent<TeleportationArea>();
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {

@@ -10,12 +10,12 @@ public class Wall : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Instance.OnBookPuzzleSolved += Disappear;
+        EventManager.Instance.OnBallPuzzleSolved += Disappear;
     }
 
     private void OnDisable()
     {
-        EventManager.Instance.OnBookPuzzleSolved -= Disappear;
+        EventManager.Instance.OnBallPuzzleSolved -= Disappear;
     }
 
     #endregion
